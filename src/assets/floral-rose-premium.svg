@@ -1,0 +1,43 @@
+<!-- Premium burgundy rose cluster - transparent background -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="roseGrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#7B2431"/>
+      <stop offset="1" stop-color="#4A1A20"/>
+    </linearGradient>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="12" stdDeviation="28" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Large main rose -->
+  <g transform="translate(360,300) scale(1)">
+    <g filter="url(#softShadow)">
+      <path fill="url(#roseGrad)" d="M0,-120 C70,-110 120,-60 130,-10 C140,40 105,90 40,110 C-15,125 -80,120 -120,86 C-160,52 -170,0 -160,-30 C-150,-70 -110,-110 -50,-125 C-10,-135 10,-130 0,-120Z"/>
+      <path fill="#5B2B2B" opacity="0.35" d="M-10,-100 C20,-90 60,-70 70,-30 C80,10 55,50 10,65 C-20,75 -60,78 -95,58 C-120,42 -130,18 -125,-5 C-120,-35 -90,-70 -40,-86 C-10,-95 -20,-105 -10,-100Z"/>
+    </g>
+    <!-- Petal highlights -->
+    <path fill="#9A3A46" opacity="0.18" d="M10,-110 C40,-105 72,-86 80,-60 C90,-24 70,8 40,24 C12,38 -25,40 -50,30 C-70,22 -86,6 -84,-16 C-82,-46 -52,-84 -12,-100 C6,-107 6,-113 10,-110Z" />
+  </g>
+
+  <!-- Secondary rose -->
+  <g transform="translate(560,210) scale(0.7) rotate(-12)">
+    <path fill="url(#roseGrad)" d="M0,-80 C50,-75 90,-40 100,-5 C110,30 85,60 40,72 C5,82 -30,78 -60,58 C-84,40 -92,12 -86,-6 C-80,-30 -60,-58 -20,-68 C-2,-73 2,-72 0,-80Z"/>
+    <path fill="#7B2431" opacity="0.25" d="M-6,-64 C18,-60 40,-48 46,-22 C52,4 38,24 10,34 C-12,42 -36,44 -54,34 C-68,26 -74,10 -72,-2 C-70,-18 -52,-42 -22,-52 C-8,-58 -14,-66 -6,-64Z"/>
+  </g>
+
+  <!-- Small white blossoms -->
+  <g transform="translate(760,360) scale(0.36)">
+    <circle cx="0" cy="0" r="34" fill="#FFF8F5" />
+    <circle cx="-18" cy="-14" r="8" fill="#FFF" opacity="0.92" />
+    <circle cx="22" cy="-8" r="6" fill="#FFF" opacity="0.9" />
+  </g>
+
+  <!-- Leaves (dark) -->
+  <g transform="translate(320,420) scale(0.9) rotate(18)">
+    <path fill="#2E2A28" opacity="0.9" d="M0,0 C60,10 120,40 140,70 C80,80 20,64 -20,40 C-40,24 -60,6 0,0Z"/>
+  </g>
+
+  <!-- subtle vignette -->
+  <rect x="0" y="0" width="1200" height="800" fill="black" opacity="0" />
+</svg>
